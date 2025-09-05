@@ -17,19 +17,22 @@
      source .venv/bin/activate
      ```
 
-3. **Перевірте залежності**
-   ```bash
-   pip freeze
-   ```
 
-4. **Встановіть необхідні пакети**
+3. **Встановіть необхідні пакети**
+   > **Рекомендується:**
    ```bash
-   pip install flask requests
+   pip install -r requirements.txt
    ```
+   > Якщо потрібно, можна перевірити всі встановлені пакети командою `pip freeze`, але для запуску проєкту достатньо requirements.txt.
 
-5. **Запустіть сервер**
+4. **Запустіть сервер**
    ```bash
    python app.py
+   ```
+
+5. **Запустіть тести для API**
+   ```bash
+   python test_requests.py
    ```
 
 ## Використання API
@@ -38,6 +41,7 @@
 - **GET /students/<id>** — отримати студента за id
 - **GET /students/lastname/<last_name>** — отримати студентів за прізвищем
 - **POST /students** — додати нового студента (тіло: first_name, last_name, age)
+- **PATCH /students/<id>** — оновити лише вік студента (тіло: age)
 - **PUT /students/<id>** — оновити дані студента
 - **DELETE /students/<id>** — видалити студента
 

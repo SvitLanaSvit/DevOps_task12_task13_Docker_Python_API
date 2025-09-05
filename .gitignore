@@ -20,6 +20,10 @@ Thumbs.db
 # CSV data
 students.csv
 
+# Temporary files
+*.tmp
+results.txt
+
 # Logs
 *.log
 

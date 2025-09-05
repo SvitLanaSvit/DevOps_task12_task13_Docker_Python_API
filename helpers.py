@@ -33,7 +33,8 @@ def get_all_students(csv_file):
         with open(csv_file, "r", newline="", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
-                students.append(row)
+                if any(row.values()):  # skip empty rows
+                    students.append(row)
     return students
 
 def validate_fields(data, fieldnames, required_fields):
@@ -106,8 +107,8 @@ def update_student_by_id(student_id, data, csv_file, fieldnames, required_fields
         writer.writerows(students)
     return s
 
-def update_student_age_by_id(student_id, data, csv_file, fieldnames, required_fields_age):
-    error = validate_fields(data, fieldnames, required_fields_age)
+def update_student_age_by_id(student_id, data, csv_file, fieldnames, required_field_age):
+    error = validate_fields(data, fieldnames, required_field_age)
     if error:
         return error
     students = get_all_students(csv_file)
