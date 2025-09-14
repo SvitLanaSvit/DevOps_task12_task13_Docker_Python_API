@@ -1,3 +1,26 @@
+# Запуск через Docker
+
+1. **Зберіть Docker-образ:**
+   ```bash
+   docker build -t dz12-api .
+   ```
+2. **Запустіть контейнер:**
+   ```bash
+   docker run --rm -d -p 8000:8000 --name dz12-api-container dz12-api
+   ```
+
+Контейнер буде доступний на порту 8000.
+1. **DOCKER_BUILD**
+   ![DOCKER_BUILD](Screenshots/DOCKER_BUILD.png)
+2. **DOCKER_RUN**
+   ![DOCKER_RUN](Screenshots/DOCKER_RUN.png)
+3. **GET /students** — отримати всіх студентів
+   ![DOCKER_GET_ALL_SUCCSESS](Screenshots/DOCKER_GET_ALL_SUCCSESS.png)
+4. **PUT /students/5** — оновити всі дані студента (успіх)
+    ![DOCKER_PUT_SUCCSESS](Screenshots/DOCKER_PUT_SUCCSESS.png)
+
+---
+
 # Flask Students API
 
 ## Як запустити проект
@@ -100,24 +123,3 @@
     ![DELETE_FAILED](Screenshots/DELETE_FAILED.png)
 
 ---
-
-# Запуск через Docker
-
-1. **Зберіть Docker-образ:**
-   ```bash
-   docker build -t dz12-api .
-   ```
-2. **Запустіть контейнер:**
-   ```bash
-   docker run --rm -d -p 8000:8000 --name dz12-api-container dz12-api
-   ```
-
-Контейнер буде доступний на порту 8000.
-1. **DOCKER_BUILD**
-   ![DOCKER_BUILD](Screenshots/DOCKER_BUILD.png)
-2. **DOCKER_RUN**
-   ![DOCKER_RUN](Screenshots/DOCKER_RUN.png)
-3. **GET /students** — отримати всіх студентів
-   ![DOCKER_GET_ALL_SUCCSESS](Screenshots/DOCKER_GET_ALL_SUCCSESS.png)
-4. **PUT /students/5** — оновити всі дані студента (успіх)
-    ![DOCKER_PUT_SUCCSESS](Screenshots/DOCKER_PUT_SUCCSESS.png)
