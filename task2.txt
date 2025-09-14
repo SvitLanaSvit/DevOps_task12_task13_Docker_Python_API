@@ -1,0 +1,21 @@
+Dockerfile
+Part 1
+Create Dockerfile for REST API from HOMEWORK 12. You need to select gunicorn as the web server to run the API and configure it to run at 0.0.0.0:8000. The base image in the Dockerfile can be anything you choose.
+
+Part 2
+Build image from your Dockerfile, run the container with docker run command and demonstrate the functionality of the image by making a request (get, post, put - on your choice) with Postman to the container.
+
+As a result, you should push your REST API, requirements.txt, Dockerfile, .dockerignore and screenshots of Postman query execution.
+
+
+To Read
+Postman download
+How to deploy flask app
+Dockerfile reference
+Формат здачі ДЗ:1. Код Dockerfile
+
+2. Скрін запуску контейнера
+
+3. Скріни запитів get, post, put (на вібир) за допомогою програми Postman
+
+4. Код requirements.txt, Dockerfile, .dockerignore

@@ -1,0 +1,9 @@
+**
+!app.py
+!helpers.py
+!routes.py
+!requirements.txt
+!entity/
+!resources/
+!test_requests.py
+!Dockerfile

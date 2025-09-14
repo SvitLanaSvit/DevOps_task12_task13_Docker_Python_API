@@ -140,3 +140,5 @@ DELETE
 3) Код test_requests.py.
 4) Код results.txt.
 5) Код requirements.txt.
+
+
