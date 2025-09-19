@@ -1,0 +1,49 @@
+Part 1
+Create a docker-compose.yml file based on Homework 13. In this file, you need to set up a service called app using the Docker image from Homework 13. The Docker image for app should be built dynamically using docker-compose.
+
+Part 2
+In addition, set up an nginx service and configure it as a reverse proxy to the app service, handling requests on HTTP port 8080. The nginx configuration should be located at /etc/nginx/conf.d/default.conf inside the container.
+
+As a result, you should push your docker-compose.yml, nginx configuration file, source code of your application and screenshots demonstrating that the setup works (e.g., a successful request made to the nginx proxy).
+
+
+To Read
+Docker Compose documentation
+Nginx Reverse Proxy Guide
+Формат здачі ДЗ:1. Код docker-compose.yml
+
+2. Код Dockerfile
+
+3. Код nginx.conf
+
+4. Скріни запуску й роботи сервісів
+
+5. Скріни результату роботи сервісів в браузері
+
+************************************************************************************
+Частина 1
+Створи файл docker-compose.yml на основі Домашнього завдання 13.
+У цьому файлі потрібно налаштувати сервіс під назвою app, який використовує Docker-образ із Домашнього завдання 13.
+Цей Docker-образ для app має збиратися динамічно за допомогою docker-compose.
+
+Частина 2
+Додатково налаштуй сервіс nginx і сконфігуруй його як зворотний проксі до сервісу app, щоб він обробляв запити на HTTP-порті 8080.
+Конфігурація nginx має знаходитись у контейнері за шляхом /etc/nginx/conf.d/default.conf.
+
+У результаті потрібно завантажити (push) у репозиторій:
+- файл docker-compose.yml
+- файл конфігурації nginx
+- початковий код твого застосунку
+- скріншоти, які демонструють, що налаштування працює (наприклад, успішний запит до проксі nginx)
+
+Що почитати:
+- документація Docker Compose
+- гайд зі Nginx Reverse Proxy
+
+Формат здачі домашнього завдання:
+1. Код docker-compose.yml
+2. Код Dockerfile
+3. Код nginx.conf
+4. Скріншоти запуску й роботи сервісів
+5. Скріншоти результату роботи сервісів у браузері
+

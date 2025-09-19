@@ -1,3 +1,30 @@
+# Запуск через Docker Compose
+
+1. **Запустіть сервіси через docker-compose:**
+   ```bash
+   docker compose up -d 
+   ```
+
+2. **Перевірте роботу контейнерів:**
+   ```bash
+   docker compose ps
+   ```
+
+3. **API буде доступний через nginx-проксі:**
+   - Відкрийте у браузері: http://localhost:8080
+   - Всі запити до API проходять через nginx (reverse proxy)
+
+4. **Зупинити сервіси:**
+   ```bash
+   docker compose down
+   ```
+1. **docker compose up -d, docker ps**
+![DOCKER_COMPOSE_UP_DOCKER_PS](Screenshots/DOCKER_COMPOSE_GET_ALL_SUCCSESS.png)
+2. **GET /students** — отримати всіх студентів
+![DOCKER_COMPOSE_GET_ALL_SUCCSESS](Screenshots/DOCKER_COMPOSE_GET_ALL_SUCCSESS.png)
+
+---
+
 # Запуск через Docker
 
 1. **Зберіть Docker-образ:**
