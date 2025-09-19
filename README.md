@@ -21,8 +21,8 @@
 Скріншоти роботи:  
 1. **docker compose up -d, docker ps**
    ![DOCKER_COMPOSE_UP_DOCKER_PS](Screenshots/Docker.png)
-2. **GET /students** — отримати всіх студентів**
-   ![DOCKER_COMPOSE_GET_ALL_SUCCSESS](Screenshots/DOCKER_COMPOSE_GET_ALL_SUCCSESS.png)
+2. **GET /students** — отримати всіх студентів** 
+   ![DOCKER_COMPOSE_GET_ALL_SUCCSESS](Screenshots/DOCKER_COMPOSE_GET_ALL_SUCCSESS.png) 
 
 ---
 
